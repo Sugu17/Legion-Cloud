@@ -23,7 +23,73 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-
+    <header>
+      <nav class="nav grid grid-cols-2 collapsible">
+        <header class="nav__navbar">
+          <span class="logo">
+            <img
+              class="logo__icon"
+              src="/icons/cloud-computing.svg"
+              alt="Brand logo"
+            />
+            Shusa Inc
+          </span>
+          <img src="/icons/menu-alt-02.svg" alt="" class="nav__toggler" />
+        </header>
+        <div class="nav__links list collapsible__body">
+          <li class="nav-item">Hosting</li>
+          <li class="nav-item">VPS</li>
+          <li class="nav-item">Domain</li>
+          <li class="nav-item">Pricing</li>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="block block--dark hero">
+        <div class="container grid grid-cols-2">
+          <div class="block__header hero__content">
+            <h1 class="block__heading">Cloud hosting for Pros</h1>
+            <p class="block__desc">
+              Deploy your websites in less than 60 seconds.
+            </p>
+            <button class="button button-primary button__stretched">
+              GET STARTED
+            </button>
+          </div>
+          <img class="hero__image" src="/images/banner@2x.webp" alt="" />
+        </div>
+      </section>
+      <section class="block container domain-block">
+        <header class="block__header">
+          <h2 class="block__heading">Starting at $10 per month</h2>
+          <p class="block__desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repellendus, et.
+          </p>
+        </header>
+        <div class="input-group">
+          <input
+            type="text"
+            name=""
+            id=""
+            class="input-field"
+            placeholder="Enter domain ..."
+          />
+          <button class="button button--accent button--block">
+            <img class="icon icon-small" src="/icons/search.svg" alt="" />
+            SEARCH
+          </button>
+        </div>
+        <ul class="list domain-block__prices">
+          <li class="badge badge-primary">.com 9$</li>
+          <li class="badge">.sg $10</li>
+          <li class="badge">.space $11</li>
+          <li class="badge">.info $14</li>
+          <li class="badge">.net $10</li>
+          <li class="badge">.xyz 18</li>
+        </ul>
+      </section>
+    </main>
   </body>
   <script src="/js/script.js"></script>
 </html>
