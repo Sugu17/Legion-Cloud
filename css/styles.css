@@ -22,6 +22,8 @@
   --color-text: #7f7f7f;
   --nav-footer-bg: #292929;
   font-family: "Rubik", Arial, Helvetica, sans-serif;
+  /* Animation duration */
+  --animate-duration:500ms;
 }
 
 html {
@@ -1093,4 +1095,17 @@ li.badge {
 
 .callout{
   margin:5rem auto;
+}
+
+/* Animations */
+.logo{
+  animation: slideInLeft var(--animate-duration);
+}
+
+.nav__toggler{
+  animation: slideInRight var(--animate-duration);
+}
+
+.block__heading,.block__desc{
+  animation: bounceInLeft var(--animate-duration);
 }
