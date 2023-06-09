@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/normalise.css" />
-    <link rel="stylesheet" href="/css/animate.css" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -486,17 +485,19 @@
       <nav class="nav grid grid-cols-2 collapsible">
         <div class="nav__navbar">
           <span class="logo"
-           dat data-aos="slide-right" ><svg class="logo__icon">
+            ><svg class="logo__icon">
               <use xlink:href="#cloud-computing"></use></svg
             >Shusa Inc</span
           >
-          <svg data-aos="slide-left" class="nav__toggler"><use xlink:href="#menu-alt-02"></use></svg>
+          <svg class="nav__toggler">
+            <use xlink:href="#menu-alt-02"></use>
+          </svg>
         </div>
         <ul class="nav__links list collapsible__body">
-          <li data-aos="slide-left" class="nav-item">Hosting</li>
-          <li data-aos="slide-left" class="nav-item">VPS</li>
-          <li data-aos="slide-left" class="nav-item">Domain</li>
-          <li data-aos="slide-left" class="nav-item">Pricing</li>
+          <li class="nav-item">Hosting</li>
+          <li class="nav-item">VPS</li>
+          <li class="nav-item">Domain</li>
+          <li class="nav-item">Pricing</li>
         </ul>
       </nav>
     </header>
@@ -505,11 +506,16 @@
       <section class="block block--dark hero">
         <div class="container grid grid-cols-2">
           <div class="block__header hero__content">
-            <h1 data-aos="zoom-in" class="block__heading">Cloud hosting for Pros</h1>
-            <p data-aos="zoom-in" class="block__desc">
+            <h1 class="block__heading">
+              Cloud hosting for Pros
+            </h1>
+            <p class="block__desc">
               Deploy your websites in less than 60 seconds.
             </p>
-            <button data-aos="fade-up" class="button button-primary button__stretched">
+            <button
+            
+              class="button button-primary button__stretched"
+            >
               GET STARTED
             </button>
           </div>
@@ -518,14 +524,14 @@
       </section>
       <!-- Domain Block -->
       <section class="block domain-block">
-        <header data-aos="zoom-in-up" class="block__header">
+        <header class="block__header">
           <h2 class="block__heading">Starting at $10 per month</h2>
           <p class="block__desc">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repellendus, et.
           </p>
         </header>
-        <div data-aos="fade" class="input-group">
+        <div class="input-group">
           <input
             type="text"
             name=""
@@ -538,7 +544,7 @@
             SEARCH
           </button>
         </div>
-        <ul data-aos="zoom-in-up" class="list domain-block__prices">
+        <ul class="list domain-block__prices">
           <li class="badge badge-primary">.com 9$</li>
           <li class="badge">.sg $10</li>
           <li class="badge">.space $11</li>
@@ -550,7 +556,7 @@
       <!-- Plan Block -->
       <section class="plan-block plans">
         <div class="grid grid-cols-3 container">
-          <div data-aos="zoom-out" class="plan">
+          <div class="plan">
             <div class="card card-accent">
               <header class="card__header">
                 <h3 class="plan-name card__header-item">Entry</h3>
@@ -598,7 +604,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="zoom-out" class="plan plan-popular">
+          <div class="plan plan-popular">
             <div class="card card-primary">
               <header class="card__header">
                 <h3 class="plan-name card__header-item">Entry</h3>
@@ -646,7 +652,7 @@
               </div>
             </div>
           </div>
-          <div data-aos="zoom-out" class="plan">
+          <div class="plan">
             <div class="card card-accent">
               <header class="card__header">
                 <h3 class="plan-name card__header-item">Entry</h3>
@@ -698,7 +704,7 @@
       </section>
       <!-- Feature Block -->
       <section class="block feature-block">
-        <header data-aos="fade-up" class="block__header">
+        <header class="block__header">
           <h2 class="block__heading">Host on the cloud keep growing</h2>
           <p class="block__desc">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -707,7 +713,7 @@
         </header>
         <div class="block__body container">
           <article class="feature grid grid-cols-2">
-            <div data-aos="fade-right" class="media media--stacked">
+            <div class="media media--stacked">
               <div class="media-image">
                 <svg class="icon"><use xlink:href="#substratum"></use></svg>
               </div>
@@ -726,14 +732,14 @@
                 ></a
               >
             </div>
-            <img data-aos="slide-up" 
+            <img
               src="/images/easy@2x.64ebbcb2.webp"
               alt=""
               class="feature__image"
             />
           </article>
           <article class="feature grid grid-cols-2">
-            <div data-aos="fade-right" class="media media--stacked">
+            <div class="media media--stacked">
               <div class="media-image">
                 <svg class="icon"><use xlink:href="#server"></use></svg>
               </div>
@@ -752,14 +758,14 @@
                 ></a
               >
             </div>
-            <img data-aos="slide-up" 
+            <img
               src="/images/fast@2x.5ba4dac3.webp"
               alt=""
               class="feature__image"
             />
           </article>
           <article class="feature grid grid-cols-2">
-            <div data-aos="fade-right" class="media media--stacked">
+            <div class="media media--stacked">
               <div class="media-image">
                 <svg class="icon"><use xlink:href="#wordpress"></use></svg>
               </div>
@@ -773,19 +779,17 @@
               </div>
               <a href="#" class="link-arrow">
                 Learn More
-                <span class="material-symbols-outlined"
-                  >arrow_right_alt</span
-                >
+                <span class="material-symbols-outlined">arrow_right_alt</span>
               </a>
             </div>
-            <img data-aos="slide-up" 
+            <img
               src="/images/wordpress@2x.d9e05d1c.webp"
               alt=""
               class="feature__image"
             />
           </article>
           <article class="feature grid grid-cols-2">
-            <div data-aos="fade-right" class="media media--stacked">
+            <div class="media media--stacked">
               <div class="media-image">
                 <svg class="icon"><use xlink:href="#support"></use></svg>
               </div>
@@ -804,7 +808,7 @@
                 ></a
               >
             </div>
-            <img data-aos="slide-up" 
+            <img
               src="/images/support@2x.01d24e23.webp"
               alt=""
               class="feature__image"
@@ -815,15 +819,17 @@
       <!-- Showcase Block -->
       <section class="block block--dark block--skewed-left showcase-block">
         <header class="block__header">
-          <h2 data-aos="fade-up" class="block__heading">User-friendly Control Panel</h2>
+          <h2 class="block__heading">
+            User-friendly Control Panel
+          </h2>
         </header>
         <div class="block__body grid grid-cols-2 container">
-          <img data-aos="zoom-in-right"
+          <img
             src="/images/ipad.b748c1d5.webp"
             alt=""
             class="showcase__image"
           />
-          <ul data-aos="slide-left" class="list list-stacked showcase__content">
+          <ul class="list list-stacked showcase__content">
             <div class="media">
               <div class="media-image">
                 <svg class="icon"><use xlink:href="#update"></use></svg>
@@ -868,7 +874,7 @@
       </section>
       <!-- Testimonial Block -->
       <section class="block testimonial-block container">
-        <header data-aos="zoom-in" class="block__header">
+        <header class="block__header">
           <h2 class="block__heading">What Our Customers Are Saying</h2>
           <p class="block__desc">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -876,7 +882,7 @@
           </p>
         </header>
         <div class="grid grid-cols-2 block__body testimonial">
-          <div data-aos="fade" class="testimonial__image">
+          <div class="testimonial__image">
             <span class="icon material-icons icon--accent">
               <svg><use xlink:href="#format_quote_white_24dp"></use></svg>
             </span>
@@ -924,7 +930,7 @@
     </main>
     <!-- Footer -->
     <footer class="block block--dark footer-block">
-      <div class="grid footer__sections">
+      <div class="grid footer__sections container">
         <div class="collapsible">
           <div class="collapsible__header">
             <h2 class="collapsible__heading">Products</h2>
@@ -998,9 +1004,5 @@
       </div>
     </footer>
   </body>
-  <script src="/js/aos.js"></script>
-  <script>
-    AOS.init({duration: 500});
-  </script>
   <script src="/js/script.js"></script>
 </html>
