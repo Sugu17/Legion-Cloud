@@ -22,8 +22,6 @@
   --color-text: #7f7f7f;
   --nav-footer-bg: #292929;
   font-family: "Rubik", Arial, Helvetica, sans-serif;
-  /* Animation duration */
-  --animate-duration:500ms;
 }
 
 html {
@@ -122,9 +120,9 @@ h3 {
   font-feature-settings: "liga";
 }
 
-.icon img {
-  height: 44px;
-  width: 44px;
+.icon {
+  height: 40px;
+  width: 40px;
 }
 
 .icon--accent {
@@ -135,6 +133,7 @@ h3 {
   height: 25px;
   width: 25px;
 }
+
 
 /* Links */
 a {
@@ -383,6 +382,9 @@ li.badge {
 
 .list-style {
   display: inline-flex;
+  align-items: center;
+  height: 20px;
+  width: 20px;
   margin-right: 0.6rem;
 }
 
@@ -525,6 +527,14 @@ li.badge {
 .testimonial__image .testimonial__user-image {
   width: 100%;
   border-radius: 20px;
+}
+
+.testimonial .media-image{
+  display: inline-block;
+}
+.testimonial .media{
+  justify-content: start;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -893,6 +903,7 @@ li.badge {
 
 .feature .media-image {
   width: fit-content;
+  height: fit-content;
   display: flex;
   background-color: #e7eff9;
   border-radius: 100%;
@@ -901,11 +912,6 @@ li.badge {
 
 .feature__image {
   width: 100%;
-}
-
-.feature .media-image img {
-  width: 40px;
-  height: 40px;
 }
 
 .feature .media__content {
@@ -950,9 +956,14 @@ li.badge {
   width: 100%;
 }
 
-.showcase__content .media-image img {
-  width: 40px;
-  height: 40px;
+.showcase__content .media-image .icon{
+  width: 48px;
+  height: 48px;
+}
+
+.showcase__content .media-body{
+  padding-left: 2rem;
+
 }
 
 /* Testimonial Block */
@@ -1098,14 +1109,3 @@ li.badge {
 }
 
 /* Animations */
-.logo{
-  animation: slideInLeft var(--animate-duration);
-}
-
-.nav__toggler{
-  animation: slideInRight var(--animate-duration);
-}
-
-.block__heading,.block__desc{
-  animation: bounceInLeft var(--animate-duration);
-}
